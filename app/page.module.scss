@@ -1,0 +1,106 @@
+@import './colors.scss';
+
+
+.page {
+  background-color: $white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+  height: 100%;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  margin-top: 230px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  color: $solidBlack;
+  font-weight: bold ;
+}
+
+.box span {
+  color: $backgroundColor;
+}
+
+.box_grey {
+  color: $solidGrey;
+}
+
+.text {
+  color: $backgroundColor;
+  font-size: 25px;
+}
+
+.box_grey span {
+  color: $solidYellow;
+}
+
+.page_about {
+   width: 100%;
+   height: 450px;
+   background-color: $backgroundColor;
+   display: flex;
+   justify-content: center;   
+}
+
+.content_about {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.box_about {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+
+.box_about h1 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.box_about h1 span {
+  color: $solidYellow;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+
+ .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .luka {
+  font-size: 15px;
+ }
+
+.luka2 {
+  font-size: 40px;
+}
+
+
+}

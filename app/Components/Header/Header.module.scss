@@ -1,0 +1,76 @@
+@import '../../colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.header {
+    position: fixed;
+    z-index: 1;
+}
+
+.box {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    width: 52px;
+    height: 47px;
+    background-Color: $white;
+    border: none;
+    cursor: pointer;
+    z-Index: 1;
+    color: $backgroundColor;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.box:hover {
+    color: rgb(219, 99, 123);
+}
+
+.container {
+    position: absolute;
+    background-color: $white;
+    transition: all 0.4s ease-in-out;
+    display: flex;                   
+    flex-Direction: row-reverse;
+    align-Items: center;
+    padding-right: 50px;
+    border-bottom: 1px solid $backgroundColor;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-family: "Playfair Display", serif;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 14px;
+}
+
+.link {
+    color: $solidBlack;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.link:hover {
+    color: $backgroundColor;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        gap: 20px;
+       margin-right: 0px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+}
+
+ 

@@ -1,0 +1,149 @@
+@import '../colors.scss';
+
+.page {
+    width: 100%;
+    background-color: $white;
+    color: $solidBlack;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 150px;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.content div span, .content div p {
+    color: $solidGrey;
+}
+
+
+.box_image {
+    color: $backgroundColor;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 1px solid $backgroundColor;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_image:hover {
+    background-color: $backgroundColor;
+    color: $white;
+    font-size: 70px;
+    animation: increaseFontSize 0.5s ease-in-out forwards;
+    
+
+}
+
+.info_service {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.info_service div p {
+    line-height: 30px;
+}
+
+.info_service div{
+    height: 400px;
+    width: 50%;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    color: $white;
+}
+
+.info_service div button {
+    background-color: $backgroundColor;
+    width: 170px;
+    height: 60px;
+    border: 1px solid $white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info_service div button:hover {
+    background-color: $white;
+    color: $backgroundColor;
+}
+
+#info_whiteBackground {
+    background-color: $white;
+    color: $solidGrey;
+}
+
+#info_whiteBackground button {
+    background-color: $white;
+    border: 1px solid $solidGrey;
+    color: $solidGrey;
+}
+
+#info_whiteBackground button:hover {
+    color: $white;
+    background-color: $backgroundColor;
+    border: 1px solid $backgroundColor;
+}
+
+.service_image {
+    background: url("../../public/service.png");
+    background-size: cover;
+}
+
+.service_image2 {
+    background: url("../../public/service2.png");
+    background-size: cover;
+}
+
+.service_image3 {
+    background: url("../../public/service3.png");
+    background-size: cover;
+}
+
+@keyframes increaseFontSize {
+    from {
+      font-size: 60px;
+      background-color: rgb(224, 67, 67, 0.10); 
+    }
+    to {
+      font-size: 70px; 
+      background-color: $backgroundColor;
+    }
+  }
+

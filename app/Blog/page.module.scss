@@ -1,0 +1,111 @@
+@import '../colors.scss';
+
+.page {
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1200px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $solidBlack;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    gap: 100px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 10px;
+}
+
+.title span{
+    color:  $backgroundColor;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box_image1 {
+    background-image: url("../../public/blog1.jpg");
+    width: 360px;
+    height: 400px;
+    background-position-x: -50px;
+    filter: grayscale(1);
+}
+
+.box_image1:hover {
+    background-position-x: 0px;
+    filter: grayscale(0);
+    animation: animatedBackground 0.5s linear infinite;
+    animation-iteration-count: 1;
+}
+
+.box_image2 {
+    background-image: url("../../public/blog2.jpg");
+    width: 360px;
+    height: 400px;
+    background-position-x: -50px;
+    filter: grayscale(1);
+}
+
+.box_image2:hover {
+    background-position-x: 0px;
+    filter: grayscale(0);
+    animation: animatedBackground 0.5s linear infinite;
+    animation-iteration-count: 1;
+}
+
+.box_image3 {
+    background-image: url("../../public/blog3.jpg");
+    width: 360px;
+    height: 400px;
+    background-position-x: -50px;
+    filter: grayscale(1);
+}
+
+.box_image3:hover {
+    background-position-x: 0px;
+    filter: grayscale(0);
+    animation: animatedBackground 0.5s linear infinite;
+    animation-iteration-count: 1;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.box h1 {
+    font-size: 20px;
+}
+
+.box p {
+    text-align: center;
+    color: $solidGrey;
+    line-height: 30px;
+}
+
+.box span {
+    color: $solidGrey;
+}
+
+@keyframes animatedBackground {
+	0% { background-position-x: -50px; }
+	100% { background-position-x: 0; }
+}
+

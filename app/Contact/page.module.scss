@@ -1,0 +1,148 @@
+@import '../colors.scss';
+
+.page {
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    color: $solidBlack;
+}
+
+.container {
+    width: 1200px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 10px;
+}
+
+.title span {
+    color: $backgroundColor;
+}
+
+.contact {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact div {
+    background-color: rgb(243, 245, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 380px;
+    height: 193px;
+    border-bottom: 3px solid $backgroundColor;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.contact div:hover {
+    border-bottom: 3px solid $solidYellow;
+    animation: moveUp 0.8s ease forwards;
+}
+
+.contact div span {
+    color: $solidGrey;
+}
+
+.box {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.contact_picture {
+    background-image: url("../../public/contact.webp");
+    width: 590px;
+    height: 350px;
+}
+
+.box_input div {
+    display: flex;
+    gap: 25px;
+}
+
+.box_input input {
+    background-color: $white;
+    width: 280px;
+    height: 45px;
+    padding-left: 20px;
+    color: $solidBlack;
+    border: 1px solid $solidGrey;
+}
+
+.box_input textarea {
+    margin-top: 25px;
+    background-color: $white;
+    width: 590px;
+    height: 280px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid $solidGrey;
+    color: $solidBlack;
+}
+
+.send_button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.send_button button {
+    width: 120px;
+    height: 35px;
+    background-color: $backgroundColor;
+    border: none;
+    cursor: pointer;
+}
+
+.send_button button:hover {
+    background-color: $solidYellow;
+    color: $backgroundColor;
+}
+
+.icon {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon_social {
+    padding: 10px;
+    color:  $white;
+    background-color: $backgroundColor;
+    cursor: pointer;
+    border-bottom: dashed;
+    margin-bottom: 150px;
+}
+
+.icon_social:hover {
+    background-color: $solidYellow;
+    color: $backgroundColor;
+}
+
+@keyframes moveUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+
+  
