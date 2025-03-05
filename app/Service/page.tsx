@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCamera, faCubes, faDesktop, } from '@fortawesome/free-solid-svg-icons'
 
-export default () => {
+export default function Service () {
     return(
         <div className={styles.page}>
             <div className={styles.container}>

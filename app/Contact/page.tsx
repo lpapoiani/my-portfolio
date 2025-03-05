@@ -7,7 +7,7 @@ import { faMapMarker, faMobile, faPaperPlane } from '@fortawesome/free-solid-svg
 import { faDeviantart, faDribbble, faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
-export default () => {
+export default function Contact () {
     return(
         <div className={styles.page}>
             <div className={styles.container}>

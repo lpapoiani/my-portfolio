@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
 
-export default () => {
+export default function Blog () {
     return(
         <div className={styles.page}>
             <div className={styles.container}>
