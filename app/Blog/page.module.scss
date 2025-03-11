@@ -109,3 +109,16 @@
 	100% { background-position-x: 0; }
 }
 
+@media screen and (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .content div p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+

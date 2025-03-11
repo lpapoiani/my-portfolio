@@ -145,4 +145,33 @@
     }
   }
 
-  
+
+  @media screen and (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box_input div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box_input textarea {
+        width: 280px;
+        height: 200px;
+    }
+
+    .send_button {
+        display: flex;
+        justify-content: center;
+    }
+  }

@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.page}>
           <div className={styles.content}>
               <div className={`${styles.container} ${styles.box}` }>
-                  <div className={styles.luka2}>
+                  <div className={styles.name}>
                     <div>
                       P<span>A</span>POI<span>A</span>NI
                     </div>
