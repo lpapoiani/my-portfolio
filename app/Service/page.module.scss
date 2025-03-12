@@ -175,3 +175,19 @@
    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .box p {
+        width: 500px;
+   }
+
+   .info_service div p{
+        line-height: 15px;
+    }
+}
+

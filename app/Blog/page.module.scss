@@ -122,3 +122,16 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .content div p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
